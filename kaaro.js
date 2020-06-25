@@ -176,3 +176,45 @@ function addRevive(playerStub) {
       console.error("Error adding document: ", error);
     });
 }
+
+function addSurvive(playerStub) {
+  let team = "blue";
+  if (playerStub == "p1" || playerStub == "p2") {
+    team = "red";
+  }
+  db.collection("/streamscore/25062020/scoretally")
+    .add({
+      team: team,
+      player: playerStub,
+      value: 150,
+      count: 1,
+      reason: "survive",
+    })
+    .then(function (docRef) {
+      console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function (error) {
+      console.error("Error adding document: ", error);
+    });
+}
+
+function addPoll(playerStub) {
+  let team = "blue";
+  if (playerStub == "p1" || playerStub == "p2") {
+    team = "red";
+  }
+  db.collection("/streamscore/25062020/scoretally")
+    .add({
+      team: team,
+      player: playerStub,
+      value: 75,
+      count: 1,
+      reason: "poll",
+    })
+    .then(function (docRef) {
+      console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function (error) {
+      console.error("Error adding document: ", error);
+    });
+}
