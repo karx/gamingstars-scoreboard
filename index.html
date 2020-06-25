@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScoreBoard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="red-team team-c">
+        <div class="score-div">
+          <div class="score-label">
+            Enemy Killed
+          </div>
+          <div class="score-points">
+            10
+          </div>
+          <div class="score-count">
+            0
+          </div>
+          <div class="score-got">
+            0
+          </div>
+        </div>
+        <div class="score-div">
+          <div class="score-label">
+            Teammate Revived
+          </div>
+          <div class="score-points">
+            50
+          </div>
+          <div class="score-count">
+            0
+          </div>
+          <div class="score-got">
+            0
+          </div>
+        </div>
+        <div class="score-div">
+          <div class="score-label">
+            Survive till End
+          </div>
+          <div class="score-points">
+            100
+          </div>
+          <div class="score-count">
+            0
+          </div>
+          <div class="score-got">
+            0
+          </div>
+        </div>
+        <div class="score-div">
+          <div class="score-label">
+            Viewer Choice
+          </div>
+          <div class="score-points">
+            75
+          </div>
+          <div class="score-count">
+            0
+          </div>
+          <div class="score-got">
+            0
+          </div>
+        </div>
+      </div>
+      <div class="blue-team team-c">
+        <div class="score-div">
+          <div class="score-label">
+            Enemy Killed
+          </div>
+          <div class="score-points">
+            10
+          </div>
+          <div class="score-count">
+            0
+          </div>
+          <div class="score-got">
+            0
+          </div>
+        </div>
+        <div class="score-div">
+          <div class="score-label">
+            Teammate Revived
+          </div>
+          <div class="score-points">
+            50
+          </div>
+          <div class="score-count">
+            0
+          </div>
+          <div class="score-got">
+            0
+          </div>
+        </div>
+        <div class="score-div">
+          <div class="score-label">
+            Survive till End
+          </div>
+          <div class="score-points">
+            100
+          </div>
+          <div class="score-count">
+            0
+          </div>
+          <div class="score-got">
+            0
+          </div>
+        </div>
+        <div class="score-div">
+          <div class="score-label">
+            Viewer Choice
+          </div>
+          <div class="score-points">
+            75
+          </div>
+          <div class="score-count">
+            0
+          </div>
+          <div class="score-got">
+            0
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDZgyjnxb5l-X_jmMvshyFw9dvaBmzNOAw",
+        authDomain: "gamingstars-scorer.firebaseapp.com",
+        databaseURL: "https://gamingstars-scorer.firebaseio.com",
+        projectId: "gamingstars-scorer",
+        storageBucket: "gamingstars-scorer.appspot.com",
+        messagingSenderId: "231132670923",
+        appId: "1:231132670923:web:1b49260d60ddccd8d6e44e",
+        measurementId: "G-F3EVS1T19C",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="kaaro.js"></script>
+  </body>
+</html>
