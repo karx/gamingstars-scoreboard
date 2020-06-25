@@ -7,127 +7,165 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="red-team team-c">
-        <div class="score-div">
-          <div class="score-label">
-            Enemy Killed
+    <div class="main-container">
+      <div class="top-score">
+        <div id="red-score-total" class="score-total">5</div>
+        <div id="blue-score-total" class="score-total">10</div>
+      </div>
+      <div class="container">
+        <div class="red-team team-c">
+          <div class="score-div">
+            <div class="score-label">
+              Enemy Killed
+            </div>
+            <div class="score-points">
+              10
+            </div>
+            <div class="score-count">
+              0
+            </div>
+            <div class="score-got">
+              0
+            </div>
           </div>
-          <div class="score-points">
-            10
+          <div class="score-div">
+            <div class="score-label">
+              Teammate Revived
+            </div>
+            <div class="score-points">
+              50
+            </div>
+            <div class="score-count">
+              0
+            </div>
+            <div class="score-got">
+              0
+            </div>
           </div>
-          <div class="score-count">
-            0
+          <div class="score-div">
+            <div class="score-label">
+              Survive till End
+            </div>
+            <div class="score-points">
+              100
+            </div>
+            <div class="score-count">
+              0
+            </div>
+            <div class="score-got">
+              0
+            </div>
           </div>
-          <div class="score-got">
-            0
+          <div class="score-div">
+            <div class="score-label">
+              Viewer Choice
+            </div>
+            <div class="score-points">
+              75
+            </div>
+            <div class="score-count">
+              0
+            </div>
+            <div class="score-got">
+              0
+            </div>
           </div>
         </div>
-        <div class="score-div">
-          <div class="score-label">
-            Teammate Revived
+        <div class="blue-team team-c">
+          <div class="score-div">
+            <div class="score-label">
+              Enemy Killed
+            </div>
+            <div class="score-points">
+              10
+            </div>
+            <div class="score-count">
+              0
+            </div>
+            <div class="score-got">
+              0
+            </div>
           </div>
-          <div class="score-points">
-            50
+          <div class="score-div">
+            <div class="score-label">
+              Teammate Revived
+            </div>
+            <div class="score-points">
+              50
+            </div>
+            <div class="score-count">
+              0
+            </div>
+            <div class="score-got">
+              0
+            </div>
           </div>
-          <div class="score-count">
-            0
+          <div class="score-div">
+            <div class="score-label">
+              Survive till End
+            </div>
+            <div class="score-points">
+              100
+            </div>
+            <div class="score-count">
+              0
+            </div>
+            <div class="score-got">
+              0
+            </div>
           </div>
-          <div class="score-got">
-            0
-          </div>
-        </div>
-        <div class="score-div">
-          <div class="score-label">
-            Survive till End
-          </div>
-          <div class="score-points">
-            100
-          </div>
-          <div class="score-count">
-            0
-          </div>
-          <div class="score-got">
-            0
-          </div>
-        </div>
-        <div class="score-div">
-          <div class="score-label">
-            Viewer Choice
-          </div>
-          <div class="score-points">
-            75
-          </div>
-          <div class="score-count">
-            0
-          </div>
-          <div class="score-got">
-            0
+          <div class="score-div">
+            <div class="score-label">
+              Viewer Choice
+            </div>
+            <div class="score-points">
+              75
+            </div>
+            <div class="score-count">
+              0
+            </div>
+            <div class="score-got">
+              0
+            </div>
           </div>
         </div>
       </div>
-      <div class="blue-team team-c">
-        <div class="score-div">
-          <div class="score-label">
-            Enemy Killed
+
+      <div class="players-container">
+        <div class="p1 player">
+          <div class="player-label">
+            Player 1
           </div>
-          <div class="score-points">
-            10
-          </div>
-          <div class="score-count">
-            0
-          </div>
-          <div class="score-got">
-            0
-          </div>
+          <div class="pkills" id="p1kills"></div>
+          <div class="prevs" id="p1revs"></div>
         </div>
-        <div class="score-div">
-          <div class="score-label">
-            Teammate Revived
+        <div class="p2 player">
+          <div class="player-label">
+            Player 2
           </div>
-          <div class="score-points">
-            50
-          </div>
-          <div class="score-count">
-            0
-          </div>
-          <div class="score-got">
-            0
-          </div>
+          <div class="pkills" id="p2kills"></div>
+          <div class="prevs" id="p2revs"></div>
         </div>
-        <div class="score-div">
-          <div class="score-label">
-            Survive till End
+        <div class="p3 player">
+          <div class="player-label">
+            Player 3
           </div>
-          <div class="score-points">
-            100
-          </div>
-          <div class="score-count">
-            0
-          </div>
-          <div class="score-got">
-            0
-          </div>
+          <div class="pkills" id="p3kills"></div>
+          <div class="prevs" id="p3revs"></div>
         </div>
-        <div class="score-div">
-          <div class="score-label">
-            Viewer Choice
+        <div class="p4 player">
+          <div class="player-label">
+            Player 4
           </div>
-          <div class="score-points">
-            75
-          </div>
-          <div class="score-count">
-            0
-          </div>
-          <div class="score-got">
-            0
-          </div>
+          <div class="pkills" id="p4kills"></div>
+          <div class="prevs" id="p4revs"></div>
         </div>
       </div>
     </div>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
