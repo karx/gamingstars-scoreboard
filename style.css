@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 50%;
     height: 200px;
     font-family: 'Orbitron', sans-serif;
@@ -27,6 +27,7 @@ body {
 }
 .score-total {
     font-size: 50px;
+    margin: 20px;
 }
 .container {
     display: flex;
@@ -111,4 +112,25 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+
+#red-score-total {
+    color: red;
+}
+
+#blue-score-total {
+    color: blue;
+}
+
+.red-each-score {
+    color: red;
+    margin-left: 5px;
+}
+
+.blue-each-score {
+    color: blue;
+    margin-left: 5px;
+}
+.each-teamScore {
+    font-size: 20px;
 }

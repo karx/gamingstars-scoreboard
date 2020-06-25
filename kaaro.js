@@ -19,7 +19,7 @@ db.collection("/streamscore/25062020/scoretally")
     });
 
     updateTotalScoreToRed(total_score);
-    updateTeamWithScoreKillRev("red",total_score, killCount, revCount);
+    updateTeamWithScoreKillRev("red", total_score, killCount, revCount);
   });
 
 db.collection("/streamscore/25062020/scoretally")
@@ -40,8 +40,7 @@ db.collection("/streamscore/25062020/scoretally")
     });
 
     updateTotalScoreToBlue(total_score);
-    updateTeamWithScoreKillRev("blue",total_score, killCount, revCount);
-
+    updateTeamWithScoreKillRev("blue", total_score, killCount, revCount);
   });
 
 //Player Score
@@ -105,11 +104,11 @@ db.collection("/streamscore/25062020/scoretally")
 
     querySnapshot.forEach((score) => {
       let scoreData = score.data();
-      console.log('p4 Search: ');
+      console.log("p4 Search: ");
       console.log(scoreData);
       if (scoreData.reason && scoreData.reason == "kill") {
         killCount++;
-      } 
+      }
       if (scoreData.reason && scoreData.reason == "revive") {
         revCount++;
       }
@@ -125,13 +124,13 @@ function updateTotalScoreToBlue(score) {
 }
 
 function updateTeamWithScoreKillRev(teamStub, score, killCount, revCount) {
-  document.getElementById(teamStub+"-the-total-score").innerHTML = score;
-  document.getElementById(teamStub+"-the-killcount").innerHTML = killCount;
-  document.getElementById(teamStub+"-the-revivecount").innerHTML = revCount;
+  document.getElementById(teamStub + "-the-total-score").innerHTML = score;
+  document.getElementById(teamStub + "-the-killcount").innerHTML = killCount;
+  document.getElementById(teamStub + "-the-revivecount").innerHTML = revCount;
 }
 
 function updatePlayerWithKillAndRev(playaStub, killCount, revCount) {
-  console.log(playaStub + "kills = " + killCount );
+  console.log(playaStub + "kills = " + killCount);
   document.getElementById(playaStub + "kills").innerHTML = killCount;
   document.getElementById(playaStub + "revs").innerHTML = revCount;
 }
@@ -147,7 +146,7 @@ function addKill(playerStub) {
       player: playerStub,
       value: 10,
       count: 1,
-      reason: 'kill',
+      reason: "kill",
     })
     .then(function (docRef) {
       console.log("Document written with ID: ", docRef.id);
@@ -156,7 +155,6 @@ function addKill(playerStub) {
       console.error("Error adding document: ", error);
     });
 }
-
 
 function addRevive(playerStub) {
   let team = "blue";
@@ -169,7 +167,7 @@ function addRevive(playerStub) {
       player: playerStub,
       value: 50,
       count: 1,
-      reason: 'revive',
+      reason: "revive",
     })
     .then(function (docRef) {
       console.log("Document written with ID: ", docRef.id);
