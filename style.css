@@ -2,6 +2,10 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
+    /* font-family: 'Notable', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+
+
 }
 .main-container {
     display: flex;
@@ -18,6 +22,8 @@ body {
     justify-content: space-evenly;
     width: 50%;
     height: 200px;
+    font-family: 'Orbitron', sans-serif;
+
 }
 .score-total {
     font-size: 50px;
@@ -29,6 +35,7 @@ body {
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .team-c {
@@ -80,4 +87,28 @@ body {
     width: 100%;
     height: 200px;
     font-size: 35px;
+}
+
+.kill-counter {
+    display: flex;
+    flex-direction: row;
+}
+.rev-counter {
+    display: flex;
+    flex-direction: row;
+}
+
+.team-score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+
+}
+.team-score-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
