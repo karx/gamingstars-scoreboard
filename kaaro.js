@@ -1,7 +1,7 @@
 let db = firebase.firestore();
 
 //TEAM SCORE
-db.collection("/streamscore/08072020/scoretally")
+db.collection("/streamscore/17072020/scoretally")
   .where("team", "==", "red")
   .onSnapshot((querySnapshot) => {
     let total_score = 0;
@@ -22,7 +22,7 @@ db.collection("/streamscore/08072020/scoretally")
     updateTeamWithScoreKillRev("red", total_score, killCount, revCount);
   });
 
-db.collection("/streamscore/08072020/scoretally")
+db.collection("/streamscore/17072020/scoretally")
   .where("team", "==", "blue")
   .onSnapshot((querySnapshot) => {
     let total_score = 0;
@@ -45,7 +45,7 @@ db.collection("/streamscore/08072020/scoretally")
 
 //Player Score
 
-db.collection("/streamscore/08072020/scoretally")
+db.collection("/streamscore/17072020/scoretally")
   .where("player", "==", "p1")
   .onSnapshot((querySnapshot) => {
     let killCount = 0;
@@ -62,7 +62,7 @@ db.collection("/streamscore/08072020/scoretally")
     updatePlayerWithKillAndRev("p1", killCount, revCount);
   });
 
-db.collection("/streamscore/08072020/scoretally")
+db.collection("/streamscore/17072020/scoretally")
   .where("player", "==", "p2")
   .onSnapshot((querySnapshot) => {
     let killCount = 0;
@@ -79,7 +79,7 @@ db.collection("/streamscore/08072020/scoretally")
     updatePlayerWithKillAndRev("p2", killCount, revCount);
   });
 
-db.collection("/streamscore/08072020/scoretally")
+db.collection("/streamscore/17072020/scoretally")
   .where("player", "==", "p3")
   .onSnapshot((querySnapshot) => {
     let killCount = 0;
@@ -96,7 +96,7 @@ db.collection("/streamscore/08072020/scoretally")
     updatePlayerWithKillAndRev("p3", killCount, revCount);
   });
 
-db.collection("/streamscore/08072020/scoretally")
+db.collection("/streamscore/17072020/scoretally")
   .where("player", "==", "p4")
   .onSnapshot((querySnapshot) => {
     let killCount = 0;
@@ -140,7 +140,7 @@ function addKill(playerStub) {
   if (playerStub == "p1" || playerStub == "p2") {
     team = "red";
   }
-  db.collection("/streamscore/08072020/scoretally")
+  db.collection("/streamscore/17072020/scoretally")
     .add({
       team: team,
       player: playerStub,
@@ -161,7 +161,7 @@ function addRevive(playerStub) {
   if (playerStub == "p1" || playerStub == "p2") {
     team = "red";
   }
-  db.collection("/streamscore/08072020/scoretally")
+  db.collection("/streamscore/17072020/scoretally")
     .add({
       team: team,
       player: playerStub,
@@ -182,7 +182,7 @@ function addSurvive(playerStub) {
   if (playerStub == "p1" || playerStub == "p2") {
     team = "red";
   }
-  db.collection("/streamscore/08072020/scoretally")
+  db.collection("/streamscore/17072020/scoretally")
     .add({
       team: team,
       player: playerStub,
@@ -203,7 +203,7 @@ function addPoll(playerStub) {
   if (playerStub == "p1" || playerStub == "p2") {
     team = "red";
   }
-  db.collection("/streamscore/08072020/scoretally")
+  db.collection("/streamscore/17072020/scoretally")
     .add({
       team: team,
       player: playerStub,
