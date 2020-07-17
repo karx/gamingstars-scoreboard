@@ -5,15 +5,13 @@ body {
   
   .wrapper {
     position: absolute;
-    background-image: url(https://raw.githubusercontent.com/erenesto/local-weather-app/master/img/partly-cloudy-day.jpg);
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-color: #444;
+    
     background-blend-mode: overlay;
   }
   
