@@ -1,4 +1,4 @@
-const timeToBeReach = new Date("July 17, 2020 21:00:00").getTime();
+const timeToBeReach = new Date("July 17, 2020 22:00:00").getTime();
 
 const updateCountDown = setInterval(() => {
 
