@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     color: silver;
+    min-height: 100px;
 
 }
 .q-heading {
@@ -27,4 +28,10 @@ body {
 }
 .ech-options {
     min-width: 80px;
+}
+
+.current-mode {
+    font-size: 30px;
+    text-align: center;
+    color: goldenrod;
 }
