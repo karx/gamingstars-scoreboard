@@ -16,6 +16,7 @@ body {
 }
 .q-heading {
     font-size: 30px;
+    max-width: 621px;
 }
 .q-options {
     font-size: 20px;
