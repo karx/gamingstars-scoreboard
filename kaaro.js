@@ -218,3 +218,21 @@ function addPoll(playerStub) {
       console.error("Error adding document: ", error);
     });
 }
+
+function updateQuestion() {
+  let question = document.getElementById('q-ask').value;
+  let options = document.getElementById('q-opts').value;
+  
+  db.collection("/streamquestion").doc("currentQuestion")
+    .set({
+      question: question,
+      options: options,
+      timestamp: new Date()
+    })
+    .then(function (docRef) {
+      console.log("Document written with ID: ", docRef);
+    })  
+    .catch(function (error) {
+      console.error("Error adding document: ", error);
+    });
+}

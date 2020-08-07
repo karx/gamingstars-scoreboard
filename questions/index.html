@@ -9,14 +9,40 @@
 </head>
 <body>
     <div class="question-container" id="qcontainer">
-        <div class="q-heading">
-            What is the best Weapon In Game
+        <div class="q-heading" id="q-head">
+            What is the best Weapon In Game ?
         </div>
-        <div class="q-options">
+        <div class="q-options" id="q-opts">
             <div class="ech-options">Uzi</div>
-            <div class="ech-options">Uzi</div>
-            <div class="ech-options">Uzi</div>
+            <div class="ech-options">AK47</div>
+            <div class="ech-options">AWM</div>
+            <div class="ech-options">M416</div>
         </div>
     </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDZgyjnxb5l-X_jmMvshyFw9dvaBmzNOAw",
+            authDomain: "gamingstars-scorer.firebaseapp.com",
+            databaseURL: "https://gamingstars-scorer.firebaseio.com",
+            projectId: "gamingstars-scorer",
+            storageBucket: "gamingstars-scorer.appspot.com",
+            messagingSenderId: "231132670923",
+            appId: "1:231132670923:web:1b49260d60ddccd8d6e44e",
+            measurementId: "G-F3EVS1T19C",
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+        <script src="questions.js"></script>
+    
 </body>
 </html>

@@ -24,9 +24,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     width: 200px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 .ech-options {
-    width: 80px;
+    min-width: 80px;
 }

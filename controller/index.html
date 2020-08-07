@@ -166,16 +166,16 @@
             Player 1
           </div>
           <div class="kill-counter">
-            <button id="p1Add" onclick="addKill('p1')">+</button><div class="pkills" id="p1kills"></div></div>
+            K:<button id="p1Add" onclick="addKill('p1')">+</button><div class="pkills" id="p1kills"></div></div>
           <div class="rev-counter">
-            <button id="p1AddRevive" onclick="addRevive('p1')">+</button> <div class="prevs" id="p1revs"></div>
+            R:<button id="p1AddRevive" onclick="addRevive('p1')">+</button> <div class="prevs" id="p1revs"></div>
           </div>
           <div class="survive-counter">
-            <button id="p1AddSurvive" onclick="addSurvive('p1')">+</button> <div class="prevs" id="p1survive"></div>
+            S:<button id="p1AddSurvive" onclick="addSurvive('p1')">+</button> <div class="prevs" id="p1survive"></div>
           </div>
           
           <div class="poll-counter">
-            <button id="p1AddPoll" onclick="addPoll('p1')">+</button> <div class="prevs" id="p1poll"></div>
+            V:<button id="p1AddPoll" onclick="addPoll('p1')">+</button> <div class="prevs" id="p1poll"></div>
           </div>
 
         </div>
@@ -233,6 +233,20 @@
           </div>
 
         </div>
+      </div>
+
+      <div class="questions-container">
+        <div class="question-to-ask">
+          <label for="q-ask">Question</label>
+          <input type="text" name="q-ask" id="q-ask">
+        </div>
+        <div class="question-options">
+          <label for="q-ask">Options</label>
+          <input type="text" name="q-opts" id="q-opts">
+        </div>
+        <button id="questionUpdate" onclick="updateQuestion()">Update Question</button>
+          
+        
       </div>
     </div>
 
