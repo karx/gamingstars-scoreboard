@@ -220,18 +220,55 @@ function addPoll(playerStub) {
 }
 
 function updateQuestion() {
-  let question = document.getElementById('q-ask').value;
-  let options = document.getElementById('q-opts').value;
-  
-  db.collection("/streamquestion").doc("currentQuestion")
+  let question = document.getElementById("q-ask").value;
+  let options = document.getElementById("q-opts").value;
+
+  db.collection("/streamquestion")
+    .doc("currentQuestion")
     .set({
       question: question,
       options: options,
-      timestamp: new Date()
+      timestamp: new Date(),
     })
     .then(function (docRef) {
       console.log("Document written with ID: ", docRef);
-    })  
+    })
+    .catch(function (error) {
+      console.error("Error adding document: ", error);
+    });
+}
+
+function updateRoomData() {
+  let roomID = document.getElementById("q-room").value;
+  let password = document.getElementById("q-pass").value;
+
+  db.collection("/streamquestion")
+    .doc("currentRoom")
+    .set({
+      room: roomID,
+      password: password,
+      timestamp: new Date(),
+    })
+    .then(function (docRef) {
+      console.log("Document written with ID: ", docRef);
+    })
+    .catch(function (error) {
+      console.error("Error adding document: ", error);
+    });
+}
+
+function updateMode() {
+  let mode = document.getElementById("q-mode").value;
+
+  db.collection("/streamquestion")
+    .doc("currentMode")
+    .set({
+      mode: mode,
+      timestamp: new Date(),
+    })
+    .then(function (docRef) {
+      console.log("Document written with ID: ", docRef);
+    })
     .catch(function (error) {
       console.error("Error adding document: ", error);
     });

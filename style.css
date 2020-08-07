@@ -145,5 +145,9 @@ body {
 }
 
 .questions-container {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+}
+
+.section {
+    margin-top: 40px;;
 }
